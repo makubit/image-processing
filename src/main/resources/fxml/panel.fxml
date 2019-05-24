@@ -20,9 +20,7 @@
          </font>
       </Label>
 
-      <Label layoutX="510.0" layoutY="335.0" text="prog binaryzacji" />
-      <TextField fx:id="progbinaryzacji" layoutX="510.0" layoutY="355.0" />
-
+      <Label fx:id="label_go" layoutX="510.0" layoutY="335.0" text="odl. geodezyjna" />
       <Label layoutX="510.0" layoutY="105.0" text="Punkty lamanej" />
 
       <TextField fx:id="ax" layoutX="510.0" layoutY="125.0" prefHeight="25.0" prefWidth="71.0" promptText="x" />
@@ -46,9 +44,8 @@
          </font>
       </Button>
       <Button fx:id="save" layoutX="514.0" layoutY="486.0" mnemonicParsing="false" onAction="#save" text="Zapisz" />
-      <TextField fx:id="odlX" layoutX="510.0" layoutY="406.0" prefHeight="25.0" prefWidth="71.0" promptText="x" />
-      <TextField fx:id="odlY" layoutX="589.0" layoutY="406.0" prefHeight="25.0" prefWidth="71.0" promptText="y" />
-      <Label fx:id="label_go" layoutX="510.0" layoutY="389.0" prefHeight="17.0" prefWidth="149.0" text="odl. geodezyjna" />
+      <TextField fx:id="odlX" layoutX="510.0" layoutY="355.0" prefHeight="25.0" prefWidth="71.0" promptText="x" />
+      <TextField fx:id="odlY" layoutX="589.0" layoutY="355.0" prefHeight="25.0" prefWidth="71.0" promptText="y" />
       <Button fx:id="zaladujPonownie" layoutX="607.0" layoutY="40.0" mnemonicParsing="false" onAction="#zaladujPonownie" text="Zał. ponownie" />
 
    </children>

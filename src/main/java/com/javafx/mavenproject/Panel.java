@@ -29,8 +29,6 @@ public class Panel extends StartWindow {
     @FXML
     private javafx.scene.control.Button odlegloscgeodezyjna;
     @FXML
-    private TextField progbinaryzacji;
-    @FXML
     private TextField ax;
     @FXML
     private TextField ay;
@@ -161,6 +159,8 @@ public class Panel extends StartWindow {
                     }
                 } catch (IOException e) {
                     System.out.println("Caught exception: " + e.getMessage());
+                } catch (Exception e) {
+                    System.out.println("Parsing int error: " + e.getMessage());
                 }
 
                 break;
@@ -263,7 +263,6 @@ public class Panel extends StartWindow {
      * w trakcie zamieniania przekształceń
      */
     private void lockAllClearAll() {
-        progbinaryzacji.setDisable(true);
         ax.setDisable(true);
         ay.setDisable(true);
         bx.setDisable(true);
@@ -275,7 +274,6 @@ public class Panel extends StartWindow {
         odlX.setDisable(true);
         odlY.setDisable(true);
 
-        progbinaryzacji.clear();
         ax.setDisable(true);
         ay.setDisable(true);
         bx.setDisable(true);
